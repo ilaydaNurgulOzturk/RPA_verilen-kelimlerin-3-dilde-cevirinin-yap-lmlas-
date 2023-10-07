@@ -1,0 +1,512 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1524,7145.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Azure.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1534.4,7080.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Words" />
+      <Variable x:TypeArguments="sd:DataTable" Name="str_ingilizce" />
+      <Variable x:TypeArguments="sd:DataTable" Name="str_almanca" />
+      <Variable x:TypeArguments="x:String" Name="str_Turkce" />
+      <Variable x:TypeArguments="x:String" Name="str_cevrilen_alm" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1472,6388" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1438.4,6301.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1376,6016" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\Ogulcan\Desktop\uiPath\sozluk.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1342.4,5746.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:BuildDataTable DataTable="[str_ingilizce]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1280,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;str_ingilizce&quot; msdata:DataType=&quot;System.Data.DataTable, System.Data.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+                    <ui:BuildDataTable DataTable="[str_almanca]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1280,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;str_almanca&quot; msdata:DataType=&quot;System.Data.DataTable, System.Data.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1280,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sayfa1&quot;)]" SaveTo="[dt_Words]" />
+                    <Sequence DisplayName="translate acan" sap:VirtualizedContainerService.HintSize="1280,5224.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Çeviri" sap:VirtualizedContainerService.HintSize="1217.6,5112.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="b75b9f10-46db-4c70-af36-7be63bbfa218" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1184,4896" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1121.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;translate acildi&quot;]" />
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="tum turkce verileri tek tek alabilmek icin foreach kullandik" DataTable="[dt_Words]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1121.6,2356" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1041.6,2136.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NCheckState sap2010:Annotation.AnnotationText="burayi değiştir ingilizce oluşu değil sayfanın açıldığına dair hep kalacak  sembol vs işaretle " DisplayName="Check App State 'SPAN'" sap:VirtualizedContainerService.HintSize="998.4,1954.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Timeout="5" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,1704.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="variable1" />
+                                              <Variable x:TypeArguments="x:String" Name="str_cevrilen_ing" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/" CvType="ArrowButton" DesignTimeRectangle="1274, 371, 50, 50" DesignTimeScaleFactor="1.25" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;button&amp;gt;div' idx='6' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-Bz112c-RLmnJb' isleaf='1' tag='DIV' aaname='' /&gt;" Guid="ce67099f-dc13-4fdb-a28b-d30add275d37" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADgSURBVGhD7dXBCcJAEIVhO/XgxbsHDxYgeLABQbACEexAsQW1htjDyAsRFkGcw8zAC++HhbDsQr6ETSY20gRjSzC2BGNLMLYEY0swtgRjSzC2BGNLMLYEY0swT133st3+YPfHc5jxhfWL5arfH1Uo7HK92XQ272/Si8M67MHAQ4kq/I0dT2c3rkWtN9thNqbwM+bFZaJQysfjHy4bhVJg6BeuAoXSYOgb97nORqFUGGpxVSiUDkMtrgKFSmAIOPznqiqDVScYW4KxJRhbgrElGFuCsSUYW4KxJRhbI4WZvQEynhWA4nxM9QAAAABJRU5ErkJggg==" InformativeScreenshot="1c0b631bad410c2182b168a86eb3dbb7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                      <uix:Target CvType="ArrowButton" DesignTimeRectangle="1285, 384, 28, 25" ElementType="ArrowButton" FriendlyName="'chrome.exe Google Çeviri'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                      <uix:Target CvElementArea="967, 426, 793, 209" CvTextArea="984, 447, 76, 32" CvTextArgument="Ceviri" CvType="InputBox" DesignTimeRectangle="965, 426, 794, 207" FriendlyName="'ÇeviriÇevriliyor...Resm…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='QcsUad sMVRZe wneUed' tag='DIV' aaname='' check:innerText='Çeviri' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset Position="BottomLeft" X="17" Y="-15" />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İngilizce(son kullanılan'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/" CvTextArgument="ingilizce" CvType="Text" DesignTimeRectangle="758, 601, 70, 30" DesignTimeScaleFactor="1.25" FriendlyName="'İngilizce(son kullanılan'" FullSelectorArgument="&lt;webctrl aaname='İngilizce' class='Llmcnf' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='İngilizce' class='Llmcnf' type='' tag='DIV' check:innerText='İngilizce&amp;#xD;&amp;#xA;(son kullanılan dil)' /&gt;" Guid="77e3aef8-2718-4034-8fe2-7291ca0f80bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAiCAYAAAD4d09GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEgSURBVGhD7ZSBCoMwDET3K/7/Rzo6CHTnpTmliso9KCzJZbi3dZ/VSFiUiEWJWJSIRYlYlIhFiViUyJ+oZVl+x2yxKJHLrx5+GVV9Fzaizn7ISgzWd+FyUchdxSAWJVKK6j9IvO57CM4xe7RmB6nmDSXDkEWxPoK5qFkvqGoGy7Ba7Sns+kX1YP9orqoRNs92WA7JdpFHicpmWb4Rs9HuaD+YKorBcnvqnmyW5XtiNzsVjxGV9RtZv2e0r/CIq8d6PaNZUL1HxWtEsXnfH2UUpolqYC9q1gv21hmYYXtqjzFVVCP6McPc0ZodpJo3MJPlkI2o2ex5mDszTVQmw6IIKOQtkhrTr17IeZOkxun/UW/BokQsSsSiRCxKxKIk1vUL0/dKj7HMn3YAAAAASUVORK5CYII=" InformativeScreenshot="e80bdd5a1dc8cf400e2783e3818c77fb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[str_Turkce]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Text="[str_Turkce]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=en&amp;op=translate" CvElementArea="155, 367, 794, 212" CvTextArea="786, 539, 60, 15" CvTextArgument="0/ 5.000" CvType="InputBox" DesignTimeRectangle="180, 442, 709, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='er8xn' aaname='' /&gt;" Guid="006defe2-9d0f-4af6-a5d5-55bcccca4416" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAskAAAAsCAYAAACXIyX1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADfSURBVHhe7dYxAQAwEAOh+jedzn8aQAVvAADAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAAHBsH6cmYmnPI/bjAAAAAElFTkSuQmCC" InformativeScreenshot="67ab676b769203a8c2301859b12e1d69.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NGetText DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" TextString="[str_cevrilen_ing]" Version="V3">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?hl=tr" CvElementArea="968, 426, 792, 209" CvTextArea="984, 447, 76, 32" CvTextArgument="Ceviri" CvType="InputBox" DesignTimeRectangle="965, 441, 794, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Çeviri'" FullSelectorArgument="&lt;webctrl class='FqSPb' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='FqSPb' tag='DIV' type='' /&gt;" Guid="d66fe4dd-7fe8-4401-b565-e3848afb3e35" ImageBase64="" InformativeScreenshot="15b4c6844a9c05bb11da4f778edb1a88.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target CvType="Icon" DesignTimeRectangle="934, 371, 50, 50" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;div' idx='3' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-Bz112c-RLmnJb' isleaf='1' tag='DIV' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACfSURBVGhD7dQxCoAwEERRb2ph4/0vEAkoiIUscVZ2wv+wkHJek6VNGjC3gLkFzC1gbgFzC5hbwNwC5hYwt0rA1m0/X7rKwNS4UjAlrhxMhUuHPUdH72vAMlOjenwe0UbGqVE9KWx0oBrVk8EuVMbIkSSwO2oa2BMVveyAvfX36Eh8HpGmhfWmhVUJmFvA3ALmFjC3gLkFzC1gbgHzqrUDIsq15QKOWq0AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ingilizce ceviri alindi&quot;]" />
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{str_cevrilen_ing}]" DataTable="[str_ingilizce]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                            <ueab:WriteRangeX sap2010:Annotation.AnnotationText="en son gelen verileri excele eklemek istiyorum&#xA;" Destination="[Excel.Sheet(&quot;Sayfa1&quot;).Range(&quot;B1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,204" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[str_ingilizce]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ueab:WriteRangeX>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;yanlis sayfa&quot;]" />
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://translate.google.com/?hl=tr&amp;sl=tr&amp;tl=en&amp;op=translate" CvElementArea="995, 365, 97, 63" CvTextArea="1006, 385, 75, 23" CvTextArgument="Ingilizce" CvType="Button" DesignTimeRectangle="999, 366, 91, 60" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' isleaf='1' parentid='i12' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='i12' tag='SPAN' class='VfPpkd-YVzG2b' aaname='' /&gt;" Guid="663e788f-438d-416b-b8d8-277e31c8510d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAABACAYAAAB8zKu7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGiSURBVHhe7dlBauwwEIThOUeumUvnAl5PUKBCU5RlWTOm7HF90AtLbcL7X/Amj2fYJL5R4hslvlHiGyW+UeIbJb5R4hslvlHiGyW+UeIbJb5R4hslvlHiGyW+UeIbJb5R4hslvlHiG03H//r++ZuYNxUf4RP/NZf77HzSf/qpf/PVz1n7uWr37BLf6HLf/KsF7nlb/Ppc73Gm8A7v833Dz9DbVcO27mF0b8Tb468NUzsY6J2x3q4aUHcYpnbazDokPqizRp3vPWNql6kd9U7vbGR31CGfnUqdj+7iWZ0xtVut3a+9w+eje3vcLn619U5Vd9XMuEX8mXdY3VUz4+Pjr51D764a3dvDGr+e7z1jvd16xtS9ek+dNfy8hyV+g3M10DtjvV01oO4wTO1gZtjiN7jDPe/yfcPP0NtVw7bugfd6u1um4h/l1X/M1djic2SET/yD1dA8d2L97Nw5fHOqb/7dJL5R4hslvlHiGyW+UeIbJb5R4hslvlHiGyW+UeIbJb5R4hslvlHiGyW+0X98/pNe5riBxDcMPJZleWYcszx/AVLoHny5WxOBAAAAAElFTkSuQmCC" InformativeScreenshot="bfd94f9a487c1843449400178df5cbd9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="998.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                        <ui:CommentOut.Body>
+                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="2. ve 3. sutuna yazdirmali&#xA;" ArrayRow="[{&quot;&quot;,getEn, getGe}]" DataTable="[dt_Words]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,232" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:AddDataRow>
+                                          </Sequence>
+                                        </ui:CommentOut.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:CommentOut>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:ForEachRow>
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[str_almanca]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1121.6,2200.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1088,2012.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NCheckState DisplayName="Check App State 'SPAN'" sap:VirtualizedContainerService.HintSize="1044.8,1923.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Timeout="5" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,1309.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[str_Turkce]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Text="[str_Turkce]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" DesignTimeRectangle="180, 442, 709, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='er8xn' aaname='' /&gt;" Guid="98c8e7c8-9c18-4da0-8c41-de6acd7bbd42" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAskAAAAsCAYAAACXIyX1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADfSURBVHhe7dYxAQAwEAOh+jedzn8aQAVvAADAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAAHBsH6cmYmnPI/bjAAAAAElFTkSuQmCC" InformativeScreenshot="95353b4bb18c03979780ddb2382d8b00.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NGetText DisplayName="Get Text 'Çeviri'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" TextString="[str_cevrilen_alm]" Version="V3">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" CvElementArea="967, 426, 793, 209" CvTextArea="984, 447, 76, 32" CvTextArgument="Ceviri" CvType="InputBox" DesignTimeRectangle="965, 441, 794, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Çeviri'" FullSelectorArgument="&lt;webctrl class='FqSPb' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='FqSPb' tag='DIV' type='' /&gt;" Guid="aef31a37-9448-4147-ab1f-0036809f5d38" ImageBase64="" InformativeScreenshot="c5f0e4398421a8088da07e9990dc90b2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;almanca ceviri alindi&quot;]" />
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{str_cevrilen_alm}]" DataTable="[str_almanca]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                                            <ueab:WriteRangeX sap2010:Annotation.AnnotationText="en son gelen verileri excele eklemek istiyorum&#xA;" Destination="[Excel.Sheet(&quot;Sayfa1&quot;).Range(&quot;C1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,204" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[str_almanca]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ueab:WriteRangeX>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,1704.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AlmancaİngilizceTürkçe'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" CvType="ArrowButton" DesignTimeRectangle="1285, 327, 28, 25" DesignTimeScaleFactor="1.25" ElementType="ArrowButton" FriendlyName="'chrome.exe Google Çeviri'" Guid="d5152d6e-479a-4a85-83c7-b4773ee0b994" ImageBase64="" InformativeScreenshot="5731d68ef61f7583276ebe4246757d95.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="989, 310, 770, 60" FriendlyName="'AlmancaİngilizceTürkçe'" FullSelectorArgument="&lt;webctrl class='akczyd' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='akczyd' type='' tag='DIV' aaname='' check:innerText='Almanca&amp;#xD;&amp;#xA;İngilizce&amp;#xD;&amp;#xA;Türkçe' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Almanca(son kullanılan'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" CvTextArgument="Almanca" CvType="Text" DesignTimeRectangle="190, 495, 259, 40" DesignTimeScaleFactor="1.25" FriendlyName="'checkhistoryAlmanca(son…'" FullSelectorArgument="&lt;webctrl aria-role='option' idx='141' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' type='' tag='DIV' class='qSb8Pe RCaXn KKjvXb' aaname='' check:innerText='check&amp;#xD;&amp;#xA;Almanca&amp;#xD;&amp;#xA;(son kullanılan dil)' /&gt;" Guid="4a68cf81-9232-4a5c-818e-e2c42d854944" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAsCAYAAABot33mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJXSURBVHhe7dhNaoRAEMXxHCNny1lzoGwCgSxniKEzPKlqqu0PtQfi/8EPxrLUjb7FvCyEEBKEciCEhFnL4XZfls/vn+XjC8AVpe8/9YCylgPFACD1gLKWQ7QI4HoUygGAo1AOAByFcgDgKJQDAEehHAA4CuUAwFEoBwCOQjkAcBTKAYCjXKocXt/e/0TnADwoTymHsz7Q2sdPOQB1yvRy0Ad69Edq71u699Y5AA/K1HKofbx72HuX7r91DsCDMq0cah/uXvb+pWdE5+xMv+1sa27Vduzc7mmWO2oH6KVMKYezX+D83qVnRXPNetjrt+7RsiMtey33szvACOX0cpjx4ub3Lz0vmmvWMp8503E003FtBoxQhsqh9QWc9cLmzyg9M5r37G7Nc/le6brRvUjLDlCjDJdD64t69staekY0b53tmefy8/aafK7f0V7E7lvRLtBK2VUOpRexdv5I9lmRaLc265nruKR0XTTX72jPsnuR6BqglTL8n0PpZSzNz2CftSXfj+5hZz3zWXtWaaflWqBG2fWHpF5GvZD58dlqz8rPR/vRrGce7WlW24vm0Z5mmrfsAKOUXeWQ2Jdy9stZe15+PtqPZj1zHZeUrivNdRxp2Um0B4xQdpdD8owXs+WZ+U60H81655rZc/Z3dNw67zlvfwOjlEPKIeGlBP4H5bByAPA/KJQDAEehHAA4CuUAwFEoBwCOQjkAcBTKAYCjUA4AHIVyAOAolAMAR6EcADjKWg6f3/EigOtIPaCs5XC7UxDAlaXvP/WAspYDIYTYUA6EkCDL8gunOEkGGCMpRAAAAABJRU5ErkJggg==" InformativeScreenshot="0830446dd328581324f41ab8537a73c2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target CvTextArgument="Almanca" CvType="Text" DesignTimeRectangle="234, 500, 77, 30" FriendlyName="'Almanca(son kullanılan'" FullSelectorArgument="&lt;webctrl aaname='Almanca' class='Llmcnf' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Almanca' class='Llmcnf' type='' tag='DIV' check:innerText='Almanca&amp;#xD;&amp;#xA;(son kullanılan dil)' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAiCAYAAAAnOTVZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFCSURBVGhD7ZVBbsJAEAR5Bm/jrXkQx7wAIica1Bl6dmdxg5DoQ0l2uXcPdfHh/H25mn04ogBHFOCIAhxRgCMKcEQBjijAEQXsing8ff3Cvn0Sw4izSI74RxkxAo1Cjb59Eo4oQB4RXTyjG3lktkGPu3AZ1YZBI+ZLqkuZD7cCnh/d0dkEnV3nPtxUPDXizL/SxTtz8T5zFU+LiO4Rn8m76tyjO0Zns3EXsTrIfNft8Zn8Hc9kH89sx8A9wrZIGbGCbWduxcd7RXWO+XhmOwR3DHYG+ReRXcDIe3YHuhX/qh1SbTpnN2hEdEj+zvbMrXi2CzfbMc924cJ3NiPeNmJFda7y8c7obDZiV3GL2DmUN2zP3KoPh9/wmb13/cp3fB5x92Mx6ziiAEcU4IgCHFGAIwpwRAGOKMARBTiiAEfczeX6A+Dk3x1q+jFdAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[str_Turkce]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" Text="[str_Turkce]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" DesignTimeRectangle="180, 442, 709, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='er8xn' aaname='' /&gt;" Guid="98c8e7c8-9c18-4da0-8c41-de6acd7bbd42" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAskAAAAsCAYAAACXIyX1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADfSURBVHhe7dYxAQAwEAOh+jedzn8aQAVvAADAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAABCSDAAAIckAAHBsH6cmYmnPI/bjAAAAAElFTkSuQmCC" InformativeScreenshot="95353b4bb18c03979780ddb2382d8b00.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NGetText DisplayName="Get Text 'Çeviri'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="b75b9f10-46db-4c70-af36-7be63bbfa218" TextString="[str_cevrilen_alm]" Version="V3">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" CvElementArea="967, 426, 793, 209" CvTextArea="984, 447, 76, 32" CvTextArgument="Ceviri" CvType="InputBox" DesignTimeRectangle="965, 441, 794, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Çeviri'" FullSelectorArgument="&lt;webctrl class='FqSPb' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='FqSPb' tag='DIV' type='' /&gt;" Guid="aef31a37-9448-4147-ab1f-0036809f5d38" ImageBase64="" InformativeScreenshot="c5f0e4398421a8088da07e9990dc90b2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;almanca ceviri alindi&quot;]" />
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{str_cevrilen_alm}]" DataTable="[str_almanca]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+                                            <ueab:WriteRangeX sap2010:Annotation.AnnotationText="en son gelen verileri excele eklemek istiyorum&#xA;" Destination="[Excel.Sheet(&quot;Sayfa1&quot;).Range(&quot;C1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,204" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[str_almanca]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ueab:WriteRangeX>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=tr&amp;tl=de&amp;op=translate" CvElementArea="996, 307, 100, 63" CvTextArea="1006, 329, 77, 18" CvTextArgument="Almanca" CvType="Button" DesignTimeRectangle="999, 310, 94, 60" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' isleaf='1' parentid='c115' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='c115' tag='SPAN' class='VfPpkd-YVzG2b' aaname='' /&gt;" Guid="62a1fd79-0454-46bf-b7c7-268da0347f61" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAABACAYAAADhwaIzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGqSURBVHhe7ZpbasRADAT3HLlmLp0L+NthEhSEkDwvs25CFTTs9PTixfWRn7xOkAARIiBCBESIgAgRECECIkRAhAiIEAERIiBCBESIgAgRECECIkRAhAiIEAERIiBCBESIgAgRECECIkRAhAhvEfHx+fUTqLlFRO9FI6LPtgh7yVcv++oOfkGECI+K8L199l2j6j29je/9zrqMkd3IZpQtEfEHVD+o188kkm1aPNm9jye7t3iy+5ZVZER4sv4dXWOks3Ovm0FCRGS2j8Rd9b2sn9lGRjYVyyKqh2b9zLax2scY8WxUu2yb4fc+K2yLqOLJusZub+cqRjwb1S7bevwuywpLIrKHZzHi2djt7941qq2n2ox8t2JLREW8r/a7fbazrrdrZP1VZ/3IZpZ/IaKKEc9G1luXxcjufFaYFjHywLip9nf01vk7/7kRz0bVN+yu2mT3/vMsy3+s4V4QIQIiRECECIgQAREiIEIERIiACBEQIQIiRECECIgQAREiIEIERIiACBEQIQIiRECECIgQAREi/Inw/xpC3hcDEQ/HeB3HcZLngwiJHOc38CM9wxcD854AAAAASUVORK5CYII=" InformativeScreenshot="fe270aa88704b6159ccee5d0c92f08a5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                              </ui:ForEachRow>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI/SURBVDhPhZLLaxNRFIdn5cL/yZXQR5o22lYs2E2hRdyIC8GFoLEE8mxSfCRtzMK2NCDUmGJJ22xi0QYSGyoTk8zkMXknUAWnTmbl4ue5M5lQtLUHftxhuN93z5w73G2vHJpeVjDlU3CTxavgBsWypGDG1bjGXVYMnF5WMUWZZPGpJFJJosJiP1nrb7u4JklwLkyZcH//bbXmrvS3nl+sbQP+W2BZUvF8qyqIYulDtVrdbjab0Xq9GZWkerRWq73P58szHPtmBt4NqUiLMqSWjMOcrL2bIMH90An4bAGtVhvdbhedTkdLu90GCcGxgbETvxD8bIuGR8+zfh0e97Auevh4yEMQSxr0j2CCps2geventr7YVSDUZXyTZE1gpqxEy+D5HOafujTQSKPRIIGHXZneweI7RTvZFlGQ4E812OxWccdThGNlA55QGM7QJh75gngZjuiCcRIwaP61ipQgo9aVSXaKudWeBo9R2CGBzRg+pzJYj+wglvhEM2npArNbGbQ6CEEGbHL1MErxhXk89gZh879BqVQC3YouGHMpA+AseBYedfZwL9DAQ4cftsAaBEFApVKBJEngTCQwAAMagH14hGJyyogn0tiOJ2APrqNYLKFcLoMbWvzxasTxC0aG+xmy6yuDhx16NvbLKBQEHCRTEEVRF/yvrNajq9dvxcBimdtH4uArtS9qMJvDpQJWCw/iNfPsHnZ2j5DN5rQODAFLf9vF9cSxt/A2kkQmc0w/Uxb5fJ4kBW2QyfTx6h8fcX0dWzi39AAAAABJRU5ErkJggg==" InformativeScreenshot="ea11a19c171006cdaaee7750d2490aa0.jpg" Selector="&lt;html app='chrome.exe' title='Google Çeviri' /&gt;" Title="Google Çeviri - Google Chrome" Url="https://translate.google.com/" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1376,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="s" KeyModifiers="Ctrl">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="80f8b1e6-34d0-4de3-ab8b-8676d27228cb">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1472,250.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BuildDataTable DataTable="[str_ingilizce]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;str_ingilizce&quot; msdata:DataType=&quot;System.Data.DataTable, System.Data.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1472,250.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BuildDataTable DataTable="[str_almanca]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_7" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;str_almanca&quot; msdata:DataType=&quot;System.Data.DataTable, System.Data.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
